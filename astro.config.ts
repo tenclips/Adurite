@@ -2,6 +2,7 @@ import { execSync } from "node:child_process";
 import path from "node:path";
 import node from "@astrojs/node";
 import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel"
 import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 // @ts-expect-error shut
 import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
@@ -14,8 +15,7 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  adapter: node({
-    mode: "middleware",
+  adapter: vercel({
   }),
   integrations: [tailwind({ applyBaseStyles: false })],
   prefetch: {
