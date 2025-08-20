@@ -10,21 +10,17 @@ import { server as wisp } from "@mercuryworkshop/wisp-js/server";
 import { build } from "astro";
 import Fastify from "fastify";
 import INConfig from "./config";
-import { Main, Revert } from "./randomize";
 
 async function Start() {
   const FirstRun = process.env.FIRST === "true";
 
   if (!fs.existsSync("dist")) {
-    Main();
     console.log("Interstellar's not built yet! Building now...");
 
     await build({}).catch((err) => {
       console.error(err);
       process.exit(1);
     });
-
-    await Revert();
 
     if (FirstRun) {
       console.log("Restarting Server...");
