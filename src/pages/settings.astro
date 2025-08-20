@@ -3,15 +3,7 @@ import ArrowButton from "@/components/ArrowButton.astro";
 import Dropdown from "@/components/Dropdown.astro";
 import SettingsCard from "@/components/SettingsCard.astro";
 import Layout from "@/layouts/Main.astro";
-import {
-  ExternalLink,
-  EyeOff,
-  Info,
-  Search,
-  Settings2,
-  Siren,
-  SwatchBook,
-} from "lucide-astro";
+import { ExternalLink, EyeOff, Info, Search, Settings2, Siren, SwatchBook } from "lucide-astro";
 ---
 
 <Layout>
@@ -137,22 +129,14 @@ import {
           <h3 class="font-extrabold text-2xl mt-0">Information</h3>
         </div>
         <p class="font-light">
-          Version: <span class="font-bold">6.0.1</span><br />
+          Version: <span class="font-bold">v4.0.0</span><br />
           Last Updated: <span class="font-bold">{new Date(__COMMIT_DATE__).toLocaleString()}</span><br />
-          If you have any questions or concerns, please contact us at
-          <a class="font-medium" href="mailto:hello@gointerstellar.app">hello@gointerstellar.app</a>
-          or visit our
-          <a class="font-medium" href="https://discord.gg/interstellar">Discord</a>
-          or read our
-          <a class="font-medium" href="https://docs.gointerstellar.app/">Documentation</a>.
+          If you have any questions or concerns, please open an issue on the <a
+            class="underline underline-offset-2 font-medium"
+            href="https://github.com/UseNebulance/Nebulance/issues">Github repository.</a
+          > Alternatively, you can DM the owner on Discord (afterddark).
         </p>
       </div>
-    </section>
-    <div>
-      <h1 class="mt-2 font-extrabold text-5xl">Customization</h1>
-    </div>
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4 justify-center">
-      <SettingsCard description="Customize the theme of the site." title="UI" Icon={SwatchBook} />
     </section>
   </div>
   <script is:inline src="/src/lib/settings.ts"></script>

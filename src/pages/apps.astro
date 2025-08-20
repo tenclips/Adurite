@@ -37,7 +37,7 @@ const all = [...customApps, ...apps].sort((a, b) => {
       <PlusCircle class="size-5 mr-2" />
       Add App
     </button>
-    <div id="container" class="flex flex-wrap justify-center gap-4 flex-row mt-30">
+    <div id="container" class="flex flex-wrap justify-center gap-4 m-5 flex-row mt-30">
       {all.map((app) => <AssetCard asset={app} />)}
     </div>
   </div>

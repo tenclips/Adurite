@@ -1,15 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Home,
-  Loader2,
-  Maximize2,
-  Plus,
-  RotateCw,
-  Star,
-} from "lucide-astro";
+import { ArrowLeft, ArrowRight, Home, Loader2, Maximize2, Plus, RotateCw, Star } from "lucide-astro";
 ---
 
 <script src="@/lib/tabs.ts"></script>
@@ -59,7 +50,11 @@ import {
   </div>
   <div class="absolute top-0 left-0 flex flex-col w-full h-screen justify-center items-center z-[-99]">
     <Loader2 class="w-24 h-24 animate-spin text-text" />
-    <h2 class="mt-2 text-text-secondary">Interstellar is loading your content!</h2>
+    <h2 class="mt-2 text-text-secondary text-center">
+      <br />
+      <p class="font-semibold text-2xl -mb-2">Nebulance is loading your content!</p>
+      <br /> This may take anywhere from a few seconds to a few minutes. <br /> If it throws an error, please contact us on the Github repository.
+    </h2>
   </div>
   <iframe id="frame__1" class="w-full h-[calc(100vh_-_5rem)] z-9" title=""></iframe>
 </Layout>

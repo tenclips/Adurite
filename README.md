@@ -1,18 +1,18 @@
-# Interstellar V6
+# Nebulance Astro
 
-This is an unstable version of the Interstellar project, completely rewritten from the ground up.
+A new version of Nebulance, based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
 
 # Deployment
 
-To deploy Interstellar on your server, follow these steps:
+To deploy Nebulance on your server, follow these steps:
 
 #### 1. Clone the Repository
 
-First, clone the **Interstellar** repository to your server:
+First, clone the **Nebulance** repository to your server:
 
 ```bash
-git clone https://github.com/UseInterstellar/Interstellar-Astro
-cd Interstellar
+git clone https://github.com/afterddark/Nebulance-Astro
+cd Nebulance
 ```
 
 #### 2. Install Dependencies and Start the Project
@@ -27,10 +27,18 @@ This will install all the necessary dependencies and start the application in pr
 
 # Development
 
-If you are developing for Interstellar , use the following commands:
+If you are developing for Nebulance , use the following commands:
 
 ```bash
 pnpm install && pnpm dev
 ```
 
 This will install dependencies and start the development server, which will automatically reload when you make changes to the code.
+
+#### Enabling the Astro toolbar
+
+To enable the Astro development toolbar, run the following command before starting the server.
+
+```bash
+astro preferences enable --global devToolbar && astro dev
+```
