@@ -1,0 +1,54 @@
+{
+  "name": "interstellar",
+  "type": "module",
+  "version": "6.0.0",
+  "scripts": {
+    "dev": "astro preferences disable --global devToolbar && astro dev",
+    "start": "tsx index.ts",
+    "build": "astro check && astro build",
+    "typecheck": "astro check",
+    "astro": "astro",
+    "disable": "npx astro telemetry disable",
+    "precommit": "pnpm check && pnpm typecheck",
+    "check": "prettier --write . && biome check --write ."
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/node": "^9.0.0",
+    "@astrojs/tailwind": "^5.1.3",
+    "@fastify/basic-auth": "^6.0.2",
+    "@fastify/compress": "^8.0.1",
+    "@fastify/middie": "^9.0.2",
+    "@fastify/static": "^8.0.3",
+    "@mercuryworkshop/bare-mux": "2.1.7",
+    "@mercuryworkshop/epoxy-transport": "2.1.27",
+    "@mercuryworkshop/wisp-js": "^0.3.3",
+    "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
+    "astro": "^5.1.5",
+    "fastify": "^5.2.1",
+    "js-cookie": "^3.0.5",
+    "lucide-astro": "^0.471.0",
+    "mime": "^4.0.6",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite-plugin-static-copy": "^2.2.0",
+    "dompurify": "^3.2.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^22.10.2",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "cookie": "^0.7.0"
+    }
+  },
+  "resolutions": {
+    "cookie": "^0.7.0"
+  }
+}

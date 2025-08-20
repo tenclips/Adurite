@@ -1,0 +1,43 @@
+---
+import "@/global.css";
+
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link id="icon" rel="shortcut icon" href="/assets/media/favicons/default.png" />
+    <title>Home</title>
+    <ViewTransitions />
+    <script src="@/lib/global.ts"></script>
+    <script is:inline src="/assets/bundled/v.bndl.js" defer></script>
+    <script is:inline src="/assets/bundled/v.cnfg.js" defer></script>
+    <script is:inline>
+      window.dataLayer ||= [];
+
+      function gtag(...args) {
+        dataLayer.push(args);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-WKJQ5QHQTJ");
+    </script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
+    <script>
+      import { BareMuxConnection } from "@mercuryworkshop/bare-mux";
+      window.connection = new BareMuxConnection("/assets/bundled/bm-worker.js");
+      await window.connection.setTransport("/assets/bundled/ex-index.mjs", [
+        {
+          wisp: `${location.protocol === "http:" ? "ws:" : "wss:"}//${location.host}/f/`,
+        },
+      ]);
+      await navigator.serviceWorker.register("/sw.js").then(() => console.log("uv registered"));
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
