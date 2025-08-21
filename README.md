@@ -1,18 +1,18 @@
-# Nebulance Astro
+# Adurite Astro
 
-A new version of Nebulance, based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
+A new version of Adurite, based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
 
 # Deployment
 
-To deploy Nebulance on your server, follow these steps:
+To deploy Adurite on your server, follow these steps:
 
 #### 1. Clone the Repository
 
-First, clone the **Nebulance** repository to your server:
+First, clone the **Adurite** repository to your server:
 
 ```bash
-git clone https://github.com/afterddark/Nebulance-Astro
-cd Nebulance
+git clone https://github.com/adurite-network/Adurite-Astro
+cd Adurite
 ```
 
 #### 2. Install Dependencies and Start the Project
@@ -27,7 +27,7 @@ This will install all the necessary dependencies and start the application in pr
 
 # Development
 
-If you are developing for Nebulance , use the following commands:
+If you are developing for Adurite , use the following commands:
 
 ```bash
 pnpm install && pnpm dev
