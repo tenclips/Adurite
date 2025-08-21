@@ -42,13 +42,42 @@ document.addEventListener("astro:page-load", () => {
     const frame = getFrame();
     if (Titlebar && frame) {
       frame.addEventListener("load", () => {
-        const CurrentURL = frame.contentWindow?.__uv$location?.href || "";
+        const CurrentURL = frame.contentWindow?.__uv$location?.href || "/";
         Titlebar.value = CurrentURL;
       });
     }
   }
 
-  TitleBar();
+  function TitleBarSearch() {
+    const Titlebar = document.getElementById("inp") as HTMLInputElement;
+    const frame = getFrame();
+
+    if (Titlebar && frame) {
+      Titlebar.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          console.log("Enter Pressed")
+          if (Titlebar.value.includes(".") || Titlebar.value.includes("http")) {
+            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://" + Titlebar.value.trim());
+            sessionStorage.setItem("goUrl", Titlebar.value);
+          } else {
+            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl(
+              "https://www.google.com/search?q=" + Titlebar.value.trim(),
+            );
+            sessionStorage.setItem("goUrl", "https://www.google.com/search?q=" + Titlebar.value.trim());
+          }
+        }
+      });
+    }
+  }
+
+  TitleBarSearch()
+
+  TitleBar();window.__uv$config.prefix +
+      window.__uv$config.encodeUrl(
+        sessionStorage.getItem("goUrl") ||
+          localStorage.getItem("engine") ||
+          "https://www.google.com",
+      );
   setTimeout(() => TitleBar(), 40000);
 
   if (fullscreen) {
