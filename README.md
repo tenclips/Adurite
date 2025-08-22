@@ -8,7 +8,7 @@ To get releases for easy local deployment, go to the releases tab. Each release 
 
 ## Deployment
 
-There are two different options when deploying Adurite on your own. Please read through them below.
+There are two different options when deploying Adurite on your own. Please read through them below. For more info on deployment options and more possible services, see [More Deployment](deployment.md)
 
 ### Option 1: Vercel
 Vercel is a plausible option for Astro sites, and works perfectly with our website. Follow the steps to get started.
