@@ -3,7 +3,10 @@
 
 <p align="center">A new UBG website including a proxy, tons of mobile and PC games, apps, and more.</p>
 
-# Deployment
+## Releases
+To get releases for easy local deployment, go to the releases tab. Each release will be formatted as `major.minor.patch`. So, if it was major version 4, minor version 2, and patch 7, the tag would be `v4.2.7`.
+
+## Deployment
 
 There are two different options when deploying Adurite on your own. Please read through them below.
 
@@ -39,7 +42,7 @@ pnpm install && pnpm start
 
 This will install all the necessary dependencies and start the application in production mode.
 
-# Development
+## Development
 
 If you are developing for Adurite, use the following commands:
 
