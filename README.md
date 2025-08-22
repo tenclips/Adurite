@@ -1,7 +1,25 @@
 
-<h1 align="center"><img src="https://avatars.githubusercontent.com/u/185982685?s=200&v=4" height="195px"></img><br>Adurite</h1>
+<h1 align="center"><img src="name.png" height="250px" align="center"></img></h1>
+<p align="center">Adurite is an unblocked games website with over 300 games, 50 apps, a fast, reliable proxy with emulator support, and more.</p>
+<p align="center"><img src="fullpage.png" width="900px"></img></p>
 
-<p align="center">A new UBG website including a proxy, tons of mobile and PC games, apps, and more.</p>
+## Features
+* about:blank
+* Proxy
+* 300+ games
+* 50+ apps
+* Custom cloaks
+* Wisp + Epoxy technology
+
+### Proxy Support
+* easyfun.gg
+* Google
+* Youtube
+* Discord
+* TikTok
+* Crazygames
+* Cool Math Games
+* And more!
 
 ## Releases
 To get releases for easy local deployment, go to the releases tab. Each release will be formatted as `major.minor.patch`. So, if it was major version 4, minor version 2, and patch 7, the tag would be `v4.2.7`.
@@ -63,3 +81,5 @@ astro preferences enable --global devToolbar && astro dev
 <hr>
 
 ###### This website is based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
+
+###### Lots of thanks to <a href="https://github.com/titaniumnetwork-dev/">Titanium Network</a> (for Ultraviolet), Corn Unblocked for a list of free Wisp servers, and Mercury Workshop for Epoxy, Bare, and Wisp-JS
