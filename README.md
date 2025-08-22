@@ -1,6 +1,7 @@
-# Adurite
 
-A new UBG website including a proxy, tons of mobile and PC games, apps, and more.
+<h1 align="center"><img src="https://avatars.githubusercontent.com/u/185982685?s=200&v=4" height="195px"></img><br>Adurite</h1>
+
+<p align="center">A new UBG website including a proxy, tons of mobile and PC games, apps, and more.</p>
 
 # Deployment
 
