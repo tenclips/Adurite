@@ -1,5 +1,4 @@
 # Adurite
-> Based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
 
 A new UBG website including a proxy, tons of mobile and PC games, apps, and more.
 
@@ -56,3 +55,7 @@ To enable the Astro development toolbar, run the following command to enable and
 ```bash
 astro preferences enable --global devToolbar && astro dev
 ```
+
+<hr>
+
+###### This website is based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
