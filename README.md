@@ -9,6 +9,7 @@
 * 300+ games
 * 50+ apps
 * Custom cloaks
+* Brawl Stars, Roblox, Clash Royale, and more!
 * Wisp + Epoxy technology
 
 ### Proxy Support
