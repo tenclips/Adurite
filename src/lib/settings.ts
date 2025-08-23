@@ -241,6 +241,7 @@ document.addEventListener("astro:page-load", () => {
     for (const link of links) {
       link.addEventListener("click", (event) => {
         event.preventDefault();
+        console.log("Clicked dropdown")
         const value = link.getAttribute("data-value");
         if (value && cloaker[value]) {
           const { name, icon } = cloaker[value];
@@ -275,28 +276,29 @@ document.addEventListener("astro:page-load", () => {
   const customicon = document.getElementById("custom-icon") as HTMLInputElement;
   if (customtitle) {
     customtitle.value = localStorage.getItem("title") || "";
-    customtitle.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        const title = customtitle.value.trim();
+    customtitle.onkeyup = () => {
+      const title = customtitle.value.trim();
         if (title) {
           localStorage.setItem("title", title);
-          window.location.reload();
+          document.title = localStorage.getItem("title") ?? "Adurite";
         }
-      }
-    });
+    }
   }
   if (customicon) {
     customicon.value = localStorage.getItem("icon") || "";
     customicon.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
+      customicon.onkeyup = () => {
         const icon = customicon.value.trim();
-        if (icon) {
-          localStorage.setItem("icon", icon);
-          window.location.reload();
+        localStorage.setItem("icon", icon);
+      if (icon) {
+        const iconLOL = localStorage.getItem("icon") ?? "/assets/media/icons/favicon.png"
+        const iconElm = document.getElementById("icon");
+        if (iconElm) {
+          (iconElm as HTMLLinkElement).href = iconLOL;
+          console.log("ICON SET")
         }
       }
+    }
     });
   }
 
