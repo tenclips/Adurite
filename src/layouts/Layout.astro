@@ -37,7 +37,21 @@ import { ViewTransitions } from "astro:transitions";
       await navigator.serviceWorker.register("/sw.js").then(() => console.log("uv registered"));
     </script>
   </head>
-  <body>
+  <body onload="registerSW()">
     <slot />
+
+    <script>
+      import { BareMuxConnection } from "@mercuryworkshop/bare-mux";
+
+      async function registerSW() {
+        window.connection = new BareMuxConnection("/assets/bundled/bm-worker.js");
+        await window.connection.setTransport("/assets/bundled/ex-index.mjs", [
+          {
+            wisp: `wss://radiusproxy.app/adblock/`,
+          },
+        ]);
+        await navigator.serviceWorker.register("/sw.js").then(() => console.log("uv registered"));
+      }
+    </script>
   </body>
 </html>
