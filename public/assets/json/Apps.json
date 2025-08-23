@@ -1,7 +1,7 @@
 [
   {
-    "name": "! App Request",
-    "link": "https://forms.gle/vwdHN3iPz5cLaHaMA",
+    "name": "  App Request",
+    "link": "https://forms.gle/edRsj6RdjntpMkdV8",
     "image": "/assets/media/icons/pbPBP9uSRnTClFwfMwx0neL.webp",
     "categories": ["all"]
   },
@@ -32,28 +32,10 @@
     "categories": ["all", "social"]
   },
   {
-    "name": "Android",
-    "link": "https://now.gg/iframe/snippet?app_pkg=com.uncube.launcher3&partner=interstellar",
-    "image": "/assets/media/icons/mNqhIm0ayitHThpufOb2ytfpxdkrx.webp",
-    "categories": ["all", "emu", "android"]
-  },
-  {
     "name": "Temu",
     "link": "https://www.temu.com/",
     "image": "/assets/media/icons/Temu.png",
     "categories": ["all"]
-  },
-  {
-    "name": "Character AI",
-    "link": "https://now.gg/iframe/snippet?app_pkg=ai.character.app&partner=interstellar",
-    "image": "/assets/media/icons/Character-AI.webp",
-    "categories": ["all", "emu", "android"]
-  },
-  {
-    "name": "Aptoide",
-    "link": "https://now.gg/iframe/snippet?app_pkg=com.aptoide.partners.nowgg.store&partner=interstellar",
-    "image": "/assets/media/icons/VWlPkcuNIr.webp",
-    "categories": ["all", "emu", "android"]
   },
   {
     "name": "Scratch",
@@ -80,18 +62,6 @@
     "categories": ["all", "social"]
   },
   {
-    "name": "Discord Canary",
-    "link": "https://canary.discord.com/login",
-    "image": "/assets/media/icons/RWxtvIHztsvwo.jpg",
-    "categories": ["all", "social"]
-  },
-  {
-    "name": "Discord PTB (Public Test Build)",
-    "link": "https://ptb.discord.com/login",
-    "image": "/assets/media/icons/RWxtvIHztsvwo.jpg",
-    "categories": ["all", "social"]
-  },
-  {
     "name": "DuckDuckGo",
     "link": "https://start.duckduckgo.com/",
     "image": "/assets/media/icons/DuckDuckGo.webp",
@@ -107,12 +77,6 @@
     "name": "Fifa Rosters",
     "link": "https://fifarosters.com/",
     "image": "/assets/media/icons/zhGGCt4AthQKlgSk1bM3tgEDv.webp",
-    "categories": ["all"]
-  },
-  {
-    "name": "Firefox Web Browser",
-    "link": "https://replit.com/@cooleddie001/Firefox-Legacy?v=1",
-    "image": "/assets/media/icons/Firefox-Web-Browser.webp",
     "categories": ["all"]
   },
   {
@@ -302,42 +266,10 @@
     "categories": ["all", "social"]
   },
   {
-    "name": "Discord - Login",
-    "links": [
-      {
-        "name": "Discord",
-        "url": "https://discord.com/login"
-      },
-      {
-        "name": "Discord Canary",
-        "url": "https://canary.discord.com/login"
-      },
-      {
-        "name": "Discord PTB",
-        "url": "https://ptb.discord.com/login"
-      }
-    ],
-    "image": "/assets/media/icons/RWxtvIHztsvwo.jpg",
-    "categories": ["all", "social"],
-    "blank": "true"
-  },
-  {
     "name": "HD Today",
     "link": "https://hdtoday.tv",
     "image": "/assets/media/icons/HD-Today.webp",
     "categories": ["all", "stream", "media"]
-  },
-  {
-    "name": "Now.GG",
-    "link": "https://now.gg",
-    "image": "/assets/media/icons/Now-GG.webp",
-    "categories": ["all", "emu", "android"]
-  },
-  {
-    "name": "NowGG.Me",
-    "link": "https://nowgg.me",
-    "image": "/assets/media/icons/LXZTNchn1kt8I2RizD92nri93i.webp",
-    "categories": ["all", "emu", "android"]
   },
   {
     "name": "Vercel",
@@ -482,6 +414,12 @@
     "name": "Edpuzzle Answers",
     "link": "https://github.com/ai-detectoring2210/edpuzzle-answers",
     "image": "/assets/media/icons/Edpuzzle.png",
+    "categories": ["all", "edpuzzle", "cs"]
+  },
+  {
+    "name": " easyfun.gg",
+    "link": "https://easyfun.gg/",
+    "image": "/assets/media/icons/easyfun.png",
     "categories": ["all", "edpuzzle", "cs"]
   }
 ]
