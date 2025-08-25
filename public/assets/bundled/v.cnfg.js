@@ -66,7 +66,7 @@ const factory = (key) => {
 const cipher = factory((location.origin + navigator.userAgent).toUpperCase());
 /** @type {import("@titaniumnetwork-dev/ultraviolet").UVConfig}*/
 const config = {
-  prefix: '/jquery/', 
+  prefix: '/uv/', 
   encodeUrl: cipher.enc,
   decodeUrl: cipher.dec,
   handler: `${filePrefix}hndlr.js`,
