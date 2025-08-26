@@ -83,4 +83,4 @@ astro preferences enable --global devToolbar && astro dev
 
 ###### This website is based on <a href="https://github.com/UseInterstellar/Interstellar-Astro">Interstellar.</a>
 
-###### Lots of thanks to <a href="https://github.com/titaniumnetwork-dev/">Titanium Network</a> (for Ultraviolet), Corn Unblocked for a list of free Wisp servers, and Mercury Workshop for Epoxy, Bare, and Wisp-JS
+###### Lots of thanks to <a href="https://github.com/titaniumnetwork-dev/">Titanium Network</a> (for Ultraviolet), <a href="https://github.com/corn-unblocked/">Corn Unblocked</a> for a list of free Wisp servers, and <a href="https://github.com/mercuryworkshop/">Mercury Workshop</a> for Epoxy
