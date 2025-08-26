@@ -64,7 +64,7 @@ document.addEventListener("astro:page-load", () => {
             console.log("Redirected")
             Titlebar.value = "inv.nadeko.net"
             if (localStorage.getItem("knowsIV") === null)  {
-              alert("This site is called Invidious. Invidious is a YouTube alternative with less ads, less bot protection, and less data collection. This has the same selection as YouTube. Have fun!")
+              window.alert("This site is called Invidious. Invidious is a YouTube alternative with less ads, less bot protection, and less data collection. This has the same selection as YouTube. Have fun!")
               localStorage.setItem("knowsIV", "1")
             }
             sessionStorage.setItem("goUrl", Titlebar.value)
