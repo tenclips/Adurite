@@ -61,7 +61,12 @@ document.addEventListener("astro:page-load", () => {
             sessionStorage.setItem("goUrl", Titlebar.value);
           } else if (Titlebar.value.includes("youtube.com")) {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://inv.nadeko.net")
-            Titlebar.value = "https://inv.nadeko.net"
+            console.log("Redirected")
+            Titlebar.value = "inv.nadeko.net"
+            if (localStorage.getItem("knowsIV") === null)  {
+              alert("This site is called Invidious. Invidious is a YouTube alternative with less ads, less bot protection, and less data collection. This has the same selection as YouTube. Have fun!")
+              localStorage.setItem("knowsIV", true)
+            }
             sessionStorage.setItem("goUrl", Titlebar.value)
           } else {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl(
