@@ -25,7 +25,7 @@
     "@mercuryworkshop/epoxy-transport": "2.1.27",
     "@mercuryworkshop/wisp-js": "^0.3.3",
     "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
-    "astro": "^5.1.5",
+    "astro": "^5.13.3",
     "dompurify": "^3.2.3",
     "fastify": "^5.2.1",
     "js-cookie": "^3.0.5",
