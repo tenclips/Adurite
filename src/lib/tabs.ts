@@ -42,7 +42,7 @@ document.addEventListener("astro:page-load", () => {
     const frame = getFrame();
     if (Titlebar && frame) {
       frame.addEventListener("load", () => {
-        const CurrentURL = frame.contentWindow?.__uv$location?.href || "/";
+        const CurrentURL = frame.contentWindow?.__uv$location?.href || "https://google.com";
         Titlebar.value = CurrentURL;
       });
     }
@@ -59,6 +59,10 @@ document.addEventListener("astro:page-load", () => {
           if (Titlebar.value.includes(".") || Titlebar.value.includes("http")) {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://" + Titlebar.value.trim());
             sessionStorage.setItem("goUrl", Titlebar.value);
+          } else if (Titlebar.value.includes("youtube.com")) {
+            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://inv.nadeko.net")
+            Titlebar.value = "https://inv.nadeko.net"
+            sessionStorage.setItem("goUrl", Titlebar.value)
           } else {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl(
               "https://www.google.com/search?q=" + Titlebar.value.trim(),
