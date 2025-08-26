@@ -65,7 +65,7 @@ document.addEventListener("astro:page-load", () => {
             Titlebar.value = "inv.nadeko.net"
             if (localStorage.getItem("knowsIV") === null)  {
               alert("This site is called Invidious. Invidious is a YouTube alternative with less ads, less bot protection, and less data collection. This has the same selection as YouTube. Have fun!")
-              localStorage.setItem("knowsIV", true)
+              localStorage.setItem("knowsIV", "1")
             }
             sessionStorage.setItem("goUrl", Titlebar.value)
           } else {
