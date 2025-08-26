@@ -1,5 +1,5 @@
 
-<h1 align="center"><img src="name.png" height="250px" align="center"></img></h1>
+<h1 align="center"><img src="public/assets/media/icons/favicon.png" height="100px" align="center"></img><img></img><img src="name.png" height="250px" align="center"></img></h1>
 <p align="center">Adurite is an unblocked games website with over 300 games, 50 apps, a fast, reliable proxy with emulator support, and more.</p>
 <p align="center"><img src="fullpage.png" width="900px"></img></p>
 
