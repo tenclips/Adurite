@@ -31,7 +31,7 @@ import { ViewTransitions } from "astro:transitions";
       window.connection = new BareMuxConnection("/assets/bundled/bm-worker.js");
       await window.connection.setTransport("/assets/bundled/ex-index.mjs", [
         {
-          wisp: `wss://radiusproxy.app/wisp/`,
+          wisp: `wss://radiusowski.site/wisp/`,
         },
       ]);
       await navigator.serviceWorker.register("/sw.js").then(() => console.log("uv registered"));
