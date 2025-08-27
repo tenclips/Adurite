@@ -87,7 +87,7 @@ document.addEventListener("astro:page-load", () => {
           localStorage.getItem("engine") ||
           "https://www.google.com",
       );
-  setTimeout(() => TitleBar(), 1);
+  setTimeout(() => TitleBar(), 40000);
 
   if (fullscreen) {
     fullscreen.addEventListener("click", () => {
