@@ -48,6 +48,5 @@ const splashes = [
 const selection = Math.floor(Math.random() * splashes.length)
 const splashText = splashes[selection]
 
-const splashTextElement = document.getElementById("splashText") as HTMLElement | null
-
-splashTextElement.textContent = splashText;
+const splashTextElement = document.getElementById("splashText")
+splashTextElement.textContent = splashText
