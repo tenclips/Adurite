@@ -60,13 +60,9 @@ document.addEventListener("astro:page-load", () => {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://" + Titlebar.value.trim());
             sessionStorage.setItem("goUrl", Titlebar.value);
           } else if (Titlebar.value.includes("youtube.com")) {
-            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://piped.video")
+            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://inv.nadeko.net")
             console.log("Redirected")
-            Titlebar.value = "piped.video"
-            if (localStorage.getItem("knowsIV") === null)  {
-              window.alert("This site is called Piped. Piped is a YouTube alternative with less ads, less bot protection, and less data collection. This has the same selection as YouTube. Have fun!")
-              localStorage.setItem("knowsIV", "1")
-            }
+            Titlebar.value = "inv.nadeko.net"
             sessionStorage.setItem("goUrl", Titlebar.value)
           } else {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl(
