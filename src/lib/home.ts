@@ -33,7 +33,7 @@ const splashes = [
   "Fast and secure!",
   "youtube ai is stupid",
   "use invidious instead",
-  "Made with <3 by afterddark",
+  "Made with <3 by cl1pped",
   "Start using Tailwind frfr",
   "Kanye is mid",
   "woah",
