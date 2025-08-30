@@ -53,7 +53,7 @@ First, make sure you have NPM installed. If you don't, head over to https://node
 Next, run the following command:
 
 ```bash
-npm i pnpm -g
+npm i -g pnpm
 ```
 
 > [!CAUTION]
