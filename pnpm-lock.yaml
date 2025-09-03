@@ -60,8 +60,8 @@ importers:
         specifier: ^3.0.5
         version: 3.0.5
       lucide-astro:
-        specifier: ^0.471.0
-        version: 0.471.0(astro@5.1.5(@types/node@22.10.2)(@vercel/blob@1.0.2)(jiti@1.21.6)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1))
+        specifier: ^0.542.0
+        version: 0.542.0(astro@5.1.5(@types/node@22.10.2)(@vercel/blob@1.0.2)(jiti@1.21.6)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1))
       mime:
         specifier: ^4.0.6
         version: 4.0.6
@@ -2114,8 +2114,8 @@ packages:
     resolution: {integrity: sha512-123qHRfJBmo2jXDbo/a5YOQrJoHF/GNQTLzQ5+IdK5pWpceK17yRc6ozlWd25FxvGKQbIUs91fDFkXmDHTKcyA==}
     engines: {node: 20 || >=22}
 
-  lucide-astro@0.471.0:
-    resolution: {integrity: sha512-4dLwQU0opG7X9y/etUCGO8Rwvn/7C/XVdnlfbdpIU3+fAIZPuQRxHppaCLlD+JIsVXvP3sfX1lJ2qn/QKMaOaQ==}
+  lucide-astro@0.542.0:
+    resolution: {integrity: sha512-68AwEGCOmYcdShAEgz/AcQhCn9oQJwZOb5OZbwIHJM3AlZOq6B/IIlJyMbVQJJx/sTx3JgsY+iyjNodDvDiaYg==}
     peerDependencies:
       astro: '>=2.7.1'
 
@@ -5350,7 +5350,7 @@ snapshots:
 
   lru-cache@11.0.2: {}
 
-  lucide-astro@0.471.0(astro@5.1.5(@types/node@22.10.2)(@vercel/blob@1.0.2)(jiti@1.21.6)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1)):
+  lucide-astro@0.542.0(astro@5.1.5(@types/node@22.10.2)(@vercel/blob@1.0.2)(jiti@1.21.6)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1)):
     dependencies:
       astro: 5.1.5(@types/node@22.10.2)(@vercel/blob@1.0.2)(jiti@1.21.6)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.1)
 
