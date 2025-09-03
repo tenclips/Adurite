@@ -43,10 +43,13 @@ Go to Vercel, hit New Project, then enter this repository's URL into the 3rd Par
 
 ### Option 2: Github Codespaces / Local Deployment
 
-#### Before the install: If you need to install PNPM
+> [!IMPORTANT]
+> You may use your package manager of choice (NPM, Yarn, Bun, etc.), but there is no guarantee it will work with Adurite. For compatibility, please use PNPM. Installing PNPM can be found in the guide above.
+>
+> For speed, use Bun. For efficiency, use PNPM. For extra security, use Yarn. And if you just want to continue, use NPM. **We recommend PNPM.**
+> You can find a guide to install PNPM below.
 
-> [!NOTE]
-> If you have PNPM already installed, you can safely skip this step
+#### [OPTIONAL] Installing PNPM
 
 First, make sure you have NPM installed. If you don't, head over to https://nodejs.org/ and grab their installer. **NPM comes with Node.**
 
@@ -57,7 +60,7 @@ npm i -g pnpm
 ```
 
 > [!CAUTION]
-> If you do not include `-g`, this will only install PNPM to the current location selected (typically `C:`). You *must* include `-g`
+> If you omit `-g` so it simply reads `npm i pnpm`, this will not install PNPM to the global bin, and you won't be able to run commands via PNPM (such as `pnpm i`, `pnpm run build`, etc). You *must* include `-g`
 
 This will install PNPM on your computer for all of your projects and locations. You can now move on to the install!
 #### 1. Clone the Repository
@@ -77,9 +80,6 @@ Once you've cloned the repository, install the required dependencies and start t
 pnpm install && pnpm start
 ```
 
-> [!IMPORTANT]
-> You may use your package manager of choice (NPM, Yarn, Bun, etc.), but there is no guarantee it will work with Adurite. For compatibility, please use PNPM. Installing PNPM can be found in the guide above.
-
 This will install all the necessary dependencies and start the application in production mode.
 
 ## Development
@@ -97,7 +97,8 @@ This will install dependencies and start the development server, which will auto
 To enable/disable the Astro development toolbar, run the following command to enable/disable and start the server.
 
 ```bash
-astro preferences < enable | disable > --global devToolbar && astro dev # Choose either enable or disable, do NOT just copy this command and execute.
+astro preferences < enable | disable > --global devToolbar && astro dev 
+# Choose either enable or disable, do NOT just copy this command and execute.
 ```
 
 > [!NOTE]
