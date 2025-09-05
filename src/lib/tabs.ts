@@ -61,7 +61,7 @@ document.addEventListener("astro:page-load", () => {
             sessionStorage.setItem("goUrl", Titlebar.value);
           } else if (Titlebar.value === "") {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://google.com/")
-          } else if {
+          } else {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl(
               "https://www.google.com/search?q=" + Titlebar.value.trim(),
             );
