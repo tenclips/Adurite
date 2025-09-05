@@ -59,12 +59,9 @@ document.addEventListener("astro:page-load", () => {
           if (Titlebar.value.includes(".") || Titlebar.value.includes("http")) {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://" + Titlebar.value.trim());
             sessionStorage.setItem("goUrl", Titlebar.value);
-          } else if (Titlebar.value.includes("youtube.com")) {
-            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://inv.nadeko.net")
-            console.log("Redirected")
-            Titlebar.value = "inv.nadeko.net"
-            sessionStorage.setItem("goUrl", Titlebar.value)
-          } else {
+          } else if (Titlebar.value === "") {
+            frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl("https://google.com/")
+          } else if {
             frame.src = window.__uv$config.prefix + window.__uv$config.encodeUrl(
               "https://www.google.com/search?q=" + Titlebar.value.trim(),
             );

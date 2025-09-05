@@ -36,6 +36,12 @@ import { ViewTransitions } from "astro:transitions";
       ]);
       await navigator.serviceWorker.register("/sw.js").then(() => console.log("uv registered"));
     </script>
+    <script>
+      if (window.location.href.includes("vercel.app")) {
+        alert("The Vercel version has been deprecated and replaced with Netlify. This now allows support for sites like Youtube. Thank you! (Click OK to continue)")
+        window.location.href = "https://useadurite.netlify.app/"
+      }
+    </script>
   </head>
   <body>
     <slot />
