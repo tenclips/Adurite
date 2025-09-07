@@ -34,7 +34,7 @@ To deploy using Vercel, either use the button or follow the cloning steps below.
 
 #### Using the button
 Simple, just click the button. <br><br>
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fadurite-network%2FAdurite&project-name=adurite&repository-name=Adurite&demo-title=Adurite&demo-description=A%20Vercel-deployed%20Adurite%20website.&demo-url=https%3A%2F%2Fuseadurite.vercel.app%2F&demo-image=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F185982685%3Fs%3D200%26v%3D4)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftenclips%2FAdurite&project-name=adurite&repository-name=Adurite&demo-title=Adurite&demo-description=A%20Vercel-deployed%20Adurite%20website.&demo-url=https%3A%2F%2Fuseadurite.vercel.app%2F&demo-image=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F185982685%3Fs%3D200%26v%3D4)
 
 <hr>
 
@@ -68,7 +68,7 @@ This will install PNPM on your computer for all of your projects and locations. 
 First, clone the **Adurite** repository to your server:
 
 ```bash
-git clone https://github.com/adurite-network/Adurite
+git clone https://github.com/tenclips/Adurite
 cd Adurite
 ```
 
