@@ -1,4 +1,4 @@
-###### Click [here](https://github.com/adurite-network/Adurite/tree/main?tab=readme-ov-file#) to return to the README
+###### Click [here](readme.md) to return to the README
 <hr>
 
 # Official Links
