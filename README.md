@@ -110,4 +110,4 @@ astro preferences < enable | disable > --global devToolbar && astro dev
 
 ###### Thanks to <a href="https://github.com/titaniumnetwork-dev/">Titanium Network</a> for Ultraviolet, <a href="https://github.com/corn-unblocked/">Corn Unblocked</a> for a list of free Wisp servers, and <a href="https://github.com/mercuryworkshop/">Mercury Workshop</a> for Epoxy
 
-###### made with <3 by <a href="https://github.com/cl1pped">cl1pped</a> (drop a follow)
+###### made with <3 by <a href="https://github.com/x8rr">x8r</a> (drop a follow)
