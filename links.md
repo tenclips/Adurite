@@ -5,6 +5,8 @@
 
 ### [Netlify (MAIN)](https://useadurite.netlify.app)
 
+### [x8r.dev](https://adurite.x8r.dev)
+
 <hr>
 
 ###### Github Pages, Vercel, and Cloudflare pages will be set up soon.
